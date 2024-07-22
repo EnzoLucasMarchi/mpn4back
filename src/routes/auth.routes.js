@@ -6,6 +6,7 @@ const router = Router()
 
 router.post('/register', register)
 router.post('/login', login)
+router.post('/', login)
 router.get('/profile', verifyToken, myProfile)
 
 export default router

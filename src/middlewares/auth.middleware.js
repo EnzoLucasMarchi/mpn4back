@@ -19,7 +19,7 @@ export const verifyToken = (req, res, next) => {
 
 export const corsAuth = (req, res, next) => {
   const { origin } = req.headers
-  const allowedOrigins = ['http://localhost:5173','http://localhost:3000']
+  const allowedOrigins = ['http://localhost:5173','http://localhost:5173/','http://localhost:3000', 'http://localhost:3000/']
 
   if (allowedOrigins.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin)
